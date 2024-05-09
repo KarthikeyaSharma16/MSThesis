@@ -1,0 +1,11 @@
+{
+  "0": {
+    "basicblocks": 47,
+    "calls": "",
+    "file": "d3.cpp",
+    "fileloc": 3,
+    "instructions": 705,
+    "name": "fiat_25519_carry_mul",
+    "total_instructions": 705
+  }
+}
