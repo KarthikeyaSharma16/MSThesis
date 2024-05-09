@@ -1,0 +1,76 @@
+---
+MainSourceFile:  /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_1:  '
+    FileOffset:      36
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          16455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_2:  '
+    FileOffset:      39
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          16522
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_42_3:  '
+    FileOffset:      42
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          16593
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_42_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_45_4:  '
+    FileOffset:      45
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          16646
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_45_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_5:  '
+    FileOffset:      55
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          16946
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_6:  '
+    FileOffset:      58
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          17013
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_7:  '
+    FileOffset:      61
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          17084
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_8:  '
+    FileOffset:      64
+    FilePath:        d2.cpp
+    Replacements:    
+      - FilePath:        /export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_mul/OptimizedDesigns/D2/D2/comb_29/.autopilot/db/d2.pp.0.cpp
+        Offset:          17137
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_8: '
+...
