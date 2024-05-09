@@ -56,7 +56,7 @@ def main():
     macro_values = re.findall(macro_pattern, data)
     sublists = [[(sublist[0], sublist[1], value) for value in sublist[2].split(',')] for sublist in macro_values]
     random_combinations = []
-    while len(random_combinations) < 50:
+    while len(random_combinations) < 48:
         combination = tuple((random.choice(sublist) for sublist in sublists))
         if combination not in random_combinations:
             random_combinations.append(combination)
