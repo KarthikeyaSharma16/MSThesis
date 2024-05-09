@@ -1,0 +1,11 @@
+{
+  "0": {
+    "basicblocks": 42,
+    "calls": "",
+    "file": "d1.cpp",
+    "fileloc": 3,
+    "instructions": 359,
+    "name": "fiat_25519_carry_square",
+    "total_instructions": 359
+  }
+}
