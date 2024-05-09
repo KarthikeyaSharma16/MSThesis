@@ -27,4 +27,7 @@ typedef uint32_t fiat_25519_tight_field_element[10];
 
 void fiat_25519_carry_square(uint32_t out1[10], uint32_t arg1[10]);
 
+#define TILE_SIZE_I_2 8 // 1,2,4,8
+#define TILE_SIZE_I_4 4 // 1,2,4
+
 #endif
