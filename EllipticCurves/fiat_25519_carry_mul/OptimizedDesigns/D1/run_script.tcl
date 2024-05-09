@@ -1,8 +1,8 @@
-open_project StraightLineVersion
+open_project D1
 
 set_top fiat_25519_carry_mul
 
-add_files straightline.cpp
+add_files d1.cpp
 add_files fiat_25519_carry_mul.h
 add_files -tb tb.cpp
 
