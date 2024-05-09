@@ -1,0 +1,37 @@
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_square/OptimizedDesigns/D2/run_script.tcl:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=name=fiat_25519_carry_square_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=fiat_25519_carry_square
+        ^
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_square/OptimizedDesigns/D2/run_script.tcl:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=name=fiat_25519_carry_square_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=fiat_25519_carry_square
+        ^
+d2.cpp:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=m_axi depth=10 port=out1 offset=slave bundle=mem_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface m_axi depth=10 port=out1 offset=slave bundle=mem
+        ^
+d2.cpp:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=m_axi depth=10 port=arg1 offset=slave bundle=mem_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface m_axi depth=10 port=arg1 offset=slave bundle=mem
+        ^
+d2.cpp:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=mode=s_axilite port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface mode=s_axilite port=return
+        ^
+d2.cpp:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=variable = arg1_r type=complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = arg1_r type=complete
+        ^
+d2.cpp:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=variable = out1_w type=complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = out1_w type=complete
+        ^
+d2.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=variable = arr type=complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = arr type=complete
+        ^
+d2.cpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II = 1
+        ^
+d2.cpp:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+d2.cpp:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II = 1
+        ^
+d2.cpp:51:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fiat_25519_carry_square_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+12 warnings generated.

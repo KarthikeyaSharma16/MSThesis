@@ -1,0 +1,86 @@
+{
+    "1": {
+        "name": "fiat_25519_carry_square_Pipeline_ARRAY_WRITE",
+        "file": "d2.cpp",
+        "fileloc": "0",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_46_3",
+        "file": "d2.cpp",
+        "fileloc": "0",
+        "instructions": "104",
+        "total_instructions": "104",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fiat_25519_carry_square",
+        "file": "d2.cpp",
+        "fileloc": "3",
+        "instructions": "255",
+        "total_instructions": "670",
+        "calls": "4 3 2 1",
+        "basicblocks": "1",
+        "loads": {
+            "L": "23"
+        }
+    },
+    "3": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_33_1",
+        "file": "d2.cpp",
+        "fileloc": "0",
+        "instructions": "201",
+        "total_instructions": "201",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "19"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "fiat_25519_carry_square_Pipeline_ARRAY_1_READ",
+        "file": "d2.cpp",
+        "fileloc": "0",
+        "instructions": "70",
+        "total_instructions": "70",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "11"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

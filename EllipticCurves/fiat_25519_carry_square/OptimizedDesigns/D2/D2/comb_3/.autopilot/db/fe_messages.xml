@@ -1,0 +1,60 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_square/OptimizedDesigns/D2/run_script.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fiat_25519_carry_square" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_square/OptimizedDesigns/D2/run_script.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fiat_25519_carry_square" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=10 port=out1 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=10 port=arg1 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = arg1_r type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = out1_w type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = arr type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:49:19" msg_body="Loop 'VITIS_LOOP_49_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_49_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:36:19" msg_body="Loop 'VITIS_LOOP_36_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_36_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_49_4' (d2.cpp:49:19) in function 'fiat_25519_carry_square' completely with a factor of 2">
+        <args Factor="2" LoopLoc="d2.cpp:49:19" LoopName="VITIS_LOOP_49_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_36_2' (d2.cpp:36:19) in function 'fiat_25519_carry_square' completely with a factor of 1">
+        <args Factor="1" LoopLoc="d2.cpp:36:19" LoopName="VITIS_LOOP_36_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:12:11" msg_body="Applying array_partition to 'arg1_r': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="arg1_r"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:13:14" msg_body="Applying array_partition to 'out1_w': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out1_w"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:14:14" msg_body="Applying array_partition to 'arr': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="arr"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
