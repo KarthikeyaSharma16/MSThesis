@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1'
+================================================================
+* Date:           Fri May 10 12:38:53 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        D3
+* Solution:       comb_19 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.859 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        6|        6|  60.000 ns|  60.000 ns|    6|    6|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_23_1  |        4|        4|         2|          1|          1|     4|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     204|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     8|       0|      58|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      36|    -|
+|Register         |        -|     -|      77|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     8|      77|     298|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     1824|  2520|  548160|  274080|    0|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|    ~0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |mul_32ns_32ns_63_1_1_U6  |mul_32ns_32ns_63_1_1  |        0|   4|  0|  20|    0|
+    |mul_32ns_32ns_64_1_1_U7  |mul_32ns_32ns_64_1_1  |        0|   4|  0|  20|    0|
+    |mux_2_1_64_1_1_U8        |mux_2_1_64_1_1        |        0|   0|  0|   9|    0|
+    |mux_2_1_64_1_1_U9        |mux_2_1_64_1_1        |        0|   0|  0|   9|    0|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |Total                    |                      |        0|   8|  0|  58|    0|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln23_fu_221_p2    |         +|   0|  0|  12|           4|           2|
+    |add_ln29_fu_189_p2    |         +|   0|  0|  12|           4|           1|
+    |add_ln30_1_fu_210_p2  |         +|   0|  0|  12|           4|           2|
+    |arr_1_d0              |         +|   0|  0|  71|          64|          64|
+    |arr_d0                |         +|   0|  0|  71|          64|          64|
+    |empty_fu_178_p2       |         -|   0|  0|  12|           4|           4|
+    |icmp_ln23_fu_153_p2   |      icmp|   0|  0|  12|           4|           4|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0| 204|         149|         143|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i       |   9|          2|    4|          8|
+    |i_1_fu_54                |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                 |   1|   0|    1|          0|
+    |ap_done_reg               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1   |   1|   0|    1|          0|
+    |arr_1_addr_reg_313        |   2|   0|    3|          1|
+    |arr_addr_reg_324          |   3|   0|    3|          0|
+    |conv17_cast_reg_294       |  32|   0|   64|         32|
+    |i_1_fu_54                 |   4|   0|    4|          0|
+    |trunc_ln23_reg_302        |   1|   0|    1|          0|
+    |zext_ln30_1_cast_reg_289  |  32|   0|   63|         31|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     |  77|   0|  141|         64|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+--------------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |                   Source Object                  |    C Type    |
++-----------------+-----+-----+------------+--------------------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1|  return value|
+|arr_1_address0   |  out|    3|   ap_memory|                                             arr_1|         array|
+|arr_1_ce0        |  out|    1|   ap_memory|                                             arr_1|         array|
+|arr_1_we0        |  out|    1|   ap_memory|                                             arr_1|         array|
+|arr_1_d0         |  out|   64|   ap_memory|                                             arr_1|         array|
+|arr_1_address1   |  out|    3|   ap_memory|                                             arr_1|         array|
+|arr_1_ce1        |  out|    1|   ap_memory|                                             arr_1|         array|
+|arr_1_q1         |   in|   64|   ap_memory|                                             arr_1|         array|
+|arr_address0     |  out|    3|   ap_memory|                                               arr|         array|
+|arr_ce0          |  out|    1|   ap_memory|                                               arr|         array|
+|arr_we0          |  out|    1|   ap_memory|                                               arr|         array|
+|arr_d0           |  out|   64|   ap_memory|                                               arr|         array|
+|arr_address1     |  out|    3|   ap_memory|                                               arr|         array|
+|arr_ce1          |  out|    1|   ap_memory|                                               arr|         array|
+|arr_q1           |   in|   64|   ap_memory|                                               arr|         array|
+|arg1_r_address0  |  out|    4|   ap_memory|                                            arg1_r|         array|
+|arg1_r_ce0       |  out|    1|   ap_memory|                                            arg1_r|         array|
+|arg1_r_q0        |   in|   32|   ap_memory|                                            arg1_r|         array|
+|arg1_r_address1  |  out|    4|   ap_memory|                                            arg1_r|         array|
+|arg1_r_ce1       |  out|    1|   ap_memory|                                            arg1_r|         array|
+|arg1_r_q1        |   in|   32|   ap_memory|                                            arg1_r|         array|
+|conv17           |   in|   32|     ap_none|                                            conv17|        scalar|
+|zext_ln30_1      |   in|   32|     ap_none|                                       zext_ln30_1|        scalar|
++-----------------+-----+-----+------------+--------------------------------------------------+--------------+
+

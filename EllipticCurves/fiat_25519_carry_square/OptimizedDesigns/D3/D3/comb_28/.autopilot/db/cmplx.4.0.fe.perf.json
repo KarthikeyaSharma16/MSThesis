@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 55,
+    "calls": "",
+    "file": "d3.cpp",
+    "fileloc": 3,
+    "instructions": 624,
+    "loads": {
+      "L": 60
+    },
+    "name": "fiat_25519_carry_square",
+    "stores": {
+      "L": 39
+    },
+    "total_instructions": 624
+  }
+}

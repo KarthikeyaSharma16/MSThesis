@@ -1,0 +1,18 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb.cpp in debug mode
+   Compiling ../../../../d3.cpp in debug mode
+   Generating csim.exe
+Reference : 23994432, Optimized output : 23994432
+Reference : 1383200, Optimized output : 1383200
+Reference : 19583763, Optimized output : 19583763
+Reference : 27279659, Optimized output : 27279659
+Reference : 4466628, Optimized output : 4466628
+Reference : 21702942, Optimized output : 21702942
+Reference : 2931400, Optimized output : 2931400
+Reference : 25960081, Optimized output : 25960081
+Reference : 64446951, Optimized output : 64446951
+Reference : 31853319, Optimized output : 31853319
+C-Simulation Passed!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

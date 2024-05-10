@@ -1,0 +1,161 @@
+{
+    "1": {
+        "name": "fiat_25519_carry_square_Pipeline_1",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "fiat_25519_carry_square_Pipeline_ARRAY_1_READ",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "70",
+        "total_instructions": "70",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "11"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_68_9",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "160",
+        "total_instructions": "160",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "16"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "fiat_25519_carry_square_Pipeline_ARRAY_WRITE",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fiat_25519_carry_square",
+        "file": "d3.cpp",
+        "fileloc": "3",
+        "instructions": "271",
+        "total_instructions": "786",
+        "calls": "1 3 6 2 8 7 4 5",
+        "basicblocks": "1",
+        "loads": {
+            "L": "32"
+        },
+        "stores": {
+            "L": "20"
+        }
+    },
+    "6": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_54_7",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "109",
+        "total_instructions": "109",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_44_5",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

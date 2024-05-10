@@ -1,0 +1,96 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_square/OptimizedDesigns/D3/run_script.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fiat_25519_carry_square" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_25519_carry_square/OptimizedDesigns/D3/run_script.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fiat_25519_carry_square" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=10 port=out1 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=10 port=arg1 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d3.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fiat_25519_carry_square" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d3.cpp:71:20" msg_body="Loop 'VITIS_LOOP_71_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_71_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d3.cpp:57:19" msg_body="Loop 'VITIS_LOOP_57_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_57_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d3.cpp:47:19" msg_body="Loop 'VITIS_LOOP_47_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_47_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d3.cpp:37:19" msg_body="Loop 'VITIS_LOOP_37_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_37_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d3.cpp:26:19" msg_body="Loop 'VITIS_LOOP_26_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_26_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d3.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_71_10' (d3.cpp:71:20) in function 'fiat_25519_carry_square' completely with a factor of 1">
+        <args Factor="1" LoopLoc="d3.cpp:71:20" LoopName="VITIS_LOOP_71_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d3.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_57_8' (d3.cpp:57:19) in function 'fiat_25519_carry_square' completely with a factor of 1">
+        <args Factor="1" LoopLoc="d3.cpp:57:19" LoopName="VITIS_LOOP_57_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d3.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_47_6' (d3.cpp:47:19) in function 'fiat_25519_carry_square' completely with a factor of 1">
+        <args Factor="1" LoopLoc="d3.cpp:47:19" LoopName="VITIS_LOOP_47_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d3.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_37_4' (d3.cpp:37:19) in function 'fiat_25519_carry_square' completely with a factor of 1">
+        <args Factor="1" LoopLoc="d3.cpp:37:19" LoopName="VITIS_LOOP_37_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d3.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_26_2' (d3.cpp:26:19) in function 'fiat_25519_carry_square' completely with a factor of 2">
+        <args Factor="2" LoopLoc="d3.cpp:26:19" LoopName="VITIS_LOOP_26_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="d3.cpp:0:1" msg_body="array_partition dim=1 type=cyclic factor=4 variable=arg1_r 1 fiat_25519_carry_square d3.cpp:11:11 d3.cpp:56:9arg1_r">
+        <args PragmaFunction="fiat_25519_carry_square" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=arg1_r" PragmaSrcLoc="d3.cpp:56:9" PragmaSrcLoc-DebugLoc="File d3.cpp Line 56 Column 9" PragmaType="array_partition" VarName="arg1_r" varLoc="d3.cpp:11:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="d3.cpp:56:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'arg1_r' due to pipeline pragma">
+        <args Dim="1" Factor="4" Mode="cyclic" Name="arg1_r" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="d3.cpp:0:2" msg_body="array_partition dim=1 type=cyclic factor=2 variable=arr 1 fiat_25519_carry_square d3.cpp:13:14 d3.cpp:25:9arr">
+        <args PragmaFunction="fiat_25519_carry_square" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=2 variable=arr" PragmaSrcLoc="d3.cpp:25:9" PragmaSrcLoc-DebugLoc="File d3.cpp Line 25 Column 9" PragmaType="array_partition" VarName="arr" varLoc="d3.cpp:13:14"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="d3.cpp:25:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'arr' due to pipeline pragma">
+        <args Dim="1" Factor="2" Mode="cyclic" Name="arr" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d3.cpp:11:11" msg_body="Applying array_partition to 'arg1_r': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="arg1_r"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d3.cpp:13:14" msg_body="Applying array_partition to 'arr': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="arr"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

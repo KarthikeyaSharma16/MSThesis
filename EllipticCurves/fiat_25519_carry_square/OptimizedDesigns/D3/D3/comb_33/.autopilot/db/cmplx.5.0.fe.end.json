@@ -1,0 +1,107 @@
+{
+    "1": {
+        "name": "fiat_25519_carry_square_Pipeline_ARRAY_WRITE",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fiat_25519_carry_square",
+        "file": "d3.cpp",
+        "fileloc": "3",
+        "instructions": "361",
+        "total_instructions": "520",
+        "calls": "5 4 2 3 1",
+        "basicblocks": "1",
+        "loads": {
+            "L": "20"
+        },
+        "stores": {
+            "L": "20"
+        }
+    },
+    "3": {
+        "name": "fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "fiat_25519_carry_square_Pipeline_ARRAY_1_READ",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "fiat_25519_carry_square_Pipeline_1",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

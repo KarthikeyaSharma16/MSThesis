@@ -1,0 +1,405 @@
+
+
+================================================================
+== Vitis HLS Report for 'fiat_25519_carry_square'
+================================================================
+* Date:           Fri May 10 12:46:47 2024
+
+* Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+* Project:        D3
+* Solution:       comb_34 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       69|       69|  0.690 us|  0.690 us|   70|   70|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------+--------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                             |                                                  |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                           Instance                          |                      Module                      |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-------------------------------------------------------------+--------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_fiat_25519_carry_square_Pipeline_1_fu_410                |fiat_25519_carry_square_Pipeline_1                |       12|       12|   0.120 us|   0.120 us|   12|   12|       no|
+        |grp_fiat_25519_carry_square_Pipeline_ARRAY_1_READ_fu_416     |fiat_25519_carry_square_Pipeline_ARRAY_1_READ     |       12|       12|   0.120 us|   0.120 us|   12|   12|       no|
+        |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3_fu_433  |fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3  |        5|        5|  50.000 ns|  50.000 ns|    5|    5|       no|
+        |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_44_5_fu_446  |fiat_25519_carry_square_Pipeline_VITIS_LOOP_44_5  |        7|        7|  70.000 ns|  70.000 ns|    7|    7|       no|
+        |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_54_7_fu_462  |fiat_25519_carry_square_Pipeline_VITIS_LOOP_54_7  |        4|        4|  40.000 ns|  40.000 ns|    4|    4|       no|
+        |grp_fiat_25519_carry_square_Pipeline_ARRAY_WRITE_fu_486      |fiat_25519_carry_square_Pipeline_ARRAY_WRITE      |       13|       13|   0.130 us|   0.130 us|   13|   13|       no|
+        +-------------------------------------------------------------+--------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|    3156|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        4|   128|    1821|    3513|    0|
+|Memory           |        0|     -|     310|      15|    0|
+|Multiplexer      |        -|     -|       -|    1140|    -|
+|Register         |        -|     -|    2323|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        4|   128|    4454|    7824|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     1824|  2520|  548160|  274080|    0|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       ~0|     5|      ~0|       2|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+-----+------+-----+
+    |                           Instance                          |                      Module                      | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+-----+------+-----+
+    |control_s_axi_U                                              |control_s_axi                                     |        0|   0|  176|   296|    0|
+    |grp_fiat_25519_carry_square_Pipeline_1_fu_410                |fiat_25519_carry_square_Pipeline_1                |        0|   0|    6|    51|    0|
+    |grp_fiat_25519_carry_square_Pipeline_ARRAY_1_READ_fu_416     |fiat_25519_carry_square_Pipeline_ARRAY_1_READ     |        0|   0|  331|    73|    0|
+    |grp_fiat_25519_carry_square_Pipeline_ARRAY_WRITE_fu_486      |fiat_25519_carry_square_Pipeline_ARRAY_WRITE      |        0|   0|   37|    73|    0|
+    |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3_fu_433  |fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3  |        0|   8|  109|   370|    0|
+    |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_44_5_fu_446  |fiat_25519_carry_square_Pipeline_VITIS_LOOP_44_5  |        0|   4|   70|   241|    0|
+    |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_54_7_fu_462  |fiat_25519_carry_square_Pipeline_VITIS_LOOP_54_7  |        0|  32|  262|  1248|    0|
+    |mem_m_axi_U                                                  |mem_m_axi                                         |        4|   0|  830|   694|    0|
+    |mul_32ns_32ns_63_1_1_U84                                     |mul_32ns_32ns_63_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_63_1_1_U85                                     |mul_32ns_32ns_63_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_63_1_1_U86                                     |mul_32ns_32ns_63_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_63_1_1_U87                                     |mul_32ns_32ns_63_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U88                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U89                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U90                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U91                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U92                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U93                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U94                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U95                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U96                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U97                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U98                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U99                                     |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U100                                    |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U101                                    |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32ns_32ns_64_1_1_U102                                    |mul_32ns_32ns_64_1_1                              |        0|   4|    0|    20|    0|
+    |mul_32s_6ns_32_1_1_U104                                      |mul_32s_6ns_32_1_1                                |        0|   2|    0|    20|    0|
+    |mul_32s_7ns_32_1_1_U103                                      |mul_32s_7ns_32_1_1                                |        0|   2|    0|    20|    0|
+    |mul_32s_7ns_32_1_1_U105                                      |mul_32s_7ns_32_1_1                                |        0|   2|    0|    20|    0|
+    |mul_39ns_6ns_44_1_1_U106                                     |mul_39ns_6ns_44_1_1                               |        0|   2|    0|    27|    0|
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+-----+------+-----+
+    |Total                                                        |                                                  |        4| 128| 1821|  3513|    0|
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------+----------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |  Memory  |        Module        | BRAM_18K|  FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------+----------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |arr_U     |arr_RAM_AUTO_1R1W     |        0|  128|   5|    0|     5|   64|     1|          320|
+    |arr_1_U   |arr_RAM_AUTO_1R1W     |        0|  128|   5|    0|     5|   64|     1|          320|
+    |out1_w_U  |out1_w_RAM_AUTO_1R1W  |        0|   54|   5|    0|    10|   27|     1|          270|
+    +----------+----------------------+---------+-----+----+-----+------+-----+------+-------------+
+    |Total     |                      |        0|  310|  15|    0|    20|  155|     3|          910|
+    +----------+----------------------+---------+-----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln100_1_fu_1179_p2            |         +|   0|  0|  64|          64|          64|
+    |add_ln100_2_fu_1076_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln100_fu_1184_p2              |         +|   0|  0|  64|          64|          64|
+    |add_ln105_1_fu_1082_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln105_2_fu_1088_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln105_fu_1190_p2              |         +|   0|  0|  64|          64|          64|
+    |add_ln106_1_fu_1198_p2            |         +|   0|  0|  26|          26|          26|
+    |add_ln106_fu_1202_p2              |         +|   0|  0|  64|          64|          64|
+    |add_ln113_10_fu_1114_p2           |         +|   0|  0|  26|          26|          26|
+    |add_ln113_11_fu_1102_p2           |         +|   0|  0|  26|          26|          26|
+    |add_ln113_12_fu_1108_p2           |         +|   0|  0|  33|          26|          26|
+    |add_ln113_1_fu_1263_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_2_fu_1292_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_3_fu_1322_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_4_fu_1444_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_5_fu_1478_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_6_fu_1512_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_7_fu_1542_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_8_fu_1576_p2            |         +|   0|  0|  71|          64|          64|
+    |add_ln113_9_fu_1634_p2            |         +|   0|  0|  33|          26|          26|
+    |add_ln113_fu_1233_p2              |         +|   0|  0|  71|          64|          64|
+    |add_ln114_1_fu_1671_p2            |         +|   0|  0|  32|          25|          25|
+    |add_ln114_2_fu_1354_p2            |         +|   0|  0|  25|          25|          25|
+    |add_ln114_3_fu_1348_p2            |         +|   0|  0|  32|          25|          25|
+    |add_ln114_fu_1647_p2              |         +|   0|  0|  51|          44|          44|
+    |add_ln115_1_fu_1704_p2            |         +|   0|  0|  34|          27|          27|
+    |add_ln115_2_fu_1370_p2            |         +|   0|  0|  26|          26|          26|
+    |add_ln115_3_fu_1360_p2            |         +|   0|  0|  26|          26|          26|
+    |add_ln115_4_fu_1365_p2            |         +|   0|  0|  33|          26|          26|
+    |add_ln115_fu_1684_p2              |         +|   0|  0|  33|          26|          26|
+    |add_ln116_1_fu_1376_p2            |         +|   0|  0|  25|          25|          25|
+    |add_ln116_fu_1382_p2              |         +|   0|  0|  25|          25|          25|
+    |add_ln117_1_fu_1392_p2            |         +|   0|  0|  33|          26|          26|
+    |add_ln117_fu_1398_p2              |         +|   0|  0|  26|          26|          26|
+    |add_ln118_fu_1592_p2              |         +|   0|  0|  32|          25|          25|
+    |add_ln119_fu_1597_p2              |         +|   0|  0|  33|          26|          26|
+    |add_ln120_fu_1603_p2              |         +|   0|  0|  32|          25|          25|
+    |add_ln121_1_fu_1609_p2            |         +|   0|  0|  26|          26|          26|
+    |add_ln121_fu_1615_p2              |         +|   0|  0|  26|          26|          26|
+    |add_ln122_fu_1620_p2              |         +|   0|  0|  32|          25|          25|
+    |add_ln30_1_fu_746_p2              |         +|   0|  0|  71|          64|          64|
+    |add_ln30_3_fu_753_p2              |         +|   0|  0|  71|          64|          64|
+    |add_ln30_5_fu_812_p2              |         +|   0|  0|  71|          64|          64|
+    |add_ln30_7_fu_819_p2              |         +|   0|  0|  71|          64|          64|
+    |add_ln77_fu_962_p2                |         +|   0|  0|  71|          64|          64|
+    |add_ln78_fu_1431_p2               |         +|   0|  0|  71|          64|          64|
+    |add_ln82_1_fu_971_p2              |         +|   0|  0|  64|          64|          64|
+    |add_ln82_fu_977_p2                |         +|   0|  0|  64|          64|          64|
+    |add_ln83_fu_1138_p2               |         +|   0|  0|  71|          64|          64|
+    |add_ln87_1_fu_987_p2              |         +|   0|  0|  64|          64|          64|
+    |add_ln87_fu_993_p2                |         +|   0|  0|  64|          64|          64|
+    |add_ln89_1_fu_1011_p2             |         +|   0|  0|  64|          64|          64|
+    |add_ln89_fu_1017_p2               |         +|   0|  0|  64|          64|          64|
+    |add_ln93_1_fu_1024_p2             |         +|   0|  0|  71|          64|          64|
+    |add_ln93_fu_1158_p2               |         +|   0|  0|  64|          64|          64|
+    |add_ln94_1_fu_1167_p2             |         +|   0|  0|  25|          25|          25|
+    |add_ln94_fu_1172_p2               |         +|   0|  0|  64|          64|          64|
+    |add_ln97_fu_1038_p2               |         +|   0|  0|  71|          64|          64|
+    |grp_fu_617_p2                     |         +|   0|  0|  71|          64|          64|
+    |grp_fu_624_p2                     |         +|   0|  0|  71|          64|          64|
+    |ap_block_state11_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state21_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|3156|        2902|        2902|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------+-----+-----------+-----+-----------+
+    |       Name      | LUT | Input Size| Bits| Total Bits|
+    +-----------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm        |  155|         34|    1|         34|
+    |arr_1_address0   |   59|         11|    3|         33|
+    |arr_1_address1   |   43|          8|    3|         24|
+    |arr_1_ce0        |   20|          4|    1|          4|
+    |arr_1_ce1        |   14|          3|    1|          3|
+    |arr_1_d0         |   31|          6|   64|        384|
+    |arr_1_d1         |   26|          5|   64|        320|
+    |arr_1_we0        |   20|          4|    1|          4|
+    |arr_address0     |   54|         10|    3|         30|
+    |arr_address1     |   49|          9|    3|         27|
+    |arr_ce0          |   20|          4|    1|          4|
+    |arr_ce1          |   14|          3|    1|          3|
+    |arr_d0           |   43|          8|   64|        512|
+    |arr_d1           |   26|          5|   64|        320|
+    |arr_we0          |   20|          4|    1|          4|
+    |grp_fu_494_p0    |   20|          4|   32|        128|
+    |grp_fu_494_p1    |   20|          4|   32|        128|
+    |grp_fu_498_p0    |   20|          4|   32|        128|
+    |grp_fu_498_p1    |   20|          4|   32|        128|
+    |grp_fu_510_p0    |   20|          4|   32|        128|
+    |grp_fu_510_p1    |   20|          4|   32|        128|
+    |grp_fu_514_p0    |   20|          4|   32|        128|
+    |grp_fu_514_p1    |   20|          4|   32|        128|
+    |grp_fu_518_p0    |   14|          3|   32|         96|
+    |grp_fu_518_p1    |   14|          3|   32|         96|
+    |grp_fu_522_p0    |   14|          3|   32|         96|
+    |grp_fu_522_p1    |   14|          3|   32|         96|
+    |grp_fu_570_p0    |   20|          4|   32|        128|
+    |grp_fu_570_p1    |   14|          3|    7|         21|
+    |mem_ARADDR       |   14|          3|   64|        192|
+    |mem_ARLEN        |   14|          3|   32|         96|
+    |mem_ARVALID      |   14|          3|    1|          3|
+    |mem_AWADDR       |   14|          3|   64|        192|
+    |mem_AWLEN        |   14|          3|   32|         96|
+    |mem_AWVALID      |   14|          3|    1|          3|
+    |mem_BREADY       |   14|          3|    1|          3|
+    |mem_RREADY       |    9|          2|    1|          2|
+    |mem_WVALID       |    9|          2|    1|          2|
+    |mem_blk_n_AR     |    9|          2|    1|          2|
+    |mem_blk_n_AW     |    9|          2|    1|          2|
+    |mem_blk_n_B      |    9|          2|    1|          2|
+    |out1_w_address0  |   37|          7|    4|         28|
+    |out1_w_address1  |   31|          6|    4|         24|
+    |out1_w_ce0       |   14|          3|    1|          3|
+    |out1_w_d0        |   31|          6|   27|        162|
+    |out1_w_d1        |   31|          6|   27|        162|
+    |reg_596          |    9|          2|   64|        128|
+    +-----------------+-----+-----------+-----+-----------+
+    |Total            | 1140|        230| 1025|       4365|
+    +-----------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                   Name                                   | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln100_2_reg_2112                                                      |  64|   0|   64|          0|
+    |add_ln105_1_reg_2117                                                      |  64|   0|   64|          0|
+    |add_ln105_2_reg_2122                                                      |  64|   0|   64|          0|
+    |add_ln113_10_reg_2137                                                     |  26|   0|   26|          0|
+    |add_ln114_2_reg_2153                                                      |  25|   0|   25|          0|
+    |add_ln115_2_reg_2159                                                      |  26|   0|   26|          0|
+    |add_ln118_reg_2172                                                        |  25|   0|   25|          0|
+    |add_ln119_reg_2177                                                        |  26|   0|   26|          0|
+    |add_ln120_reg_2182                                                        |  25|   0|   25|          0|
+    |add_ln121_reg_2187                                                        |  26|   0|   26|          0|
+    |add_ln122_reg_2192                                                        |  25|   0|   25|          0|
+    |add_ln77_reg_2052                                                         |  64|   0|   64|          0|
+    |add_ln82_reg_2062                                                         |  64|   0|   64|          0|
+    |add_ln89_reg_2087                                                         |  64|   0|   64|          0|
+    |add_ln93_1_reg_2092                                                       |  64|   0|   64|          0|
+    |ap_CS_fsm                                                                 |  33|   0|   33|          0|
+    |arr_1_load_6_reg_2037                                                     |  64|   0|   64|          0|
+    |arr_load_7_reg_2107                                                       |  64|   0|   64|          0|
+    |conv17_reg_1937                                                           |  32|   0|   64|         32|
+    |empty_26_reg_1970                                                         |  31|   0|   31|          0|
+    |empty_27_reg_1875                                                         |  31|   0|   31|          0|
+    |empty_28_reg_1913                                                         |  31|   0|   31|          0|
+    |empty_29_reg_1919                                                         |  31|   0|   31|          0|
+    |empty_30_reg_1925                                                         |  31|   0|   31|          0|
+    |empty_31_reg_1931                                                         |  31|   0|   31|          0|
+    |grp_fiat_25519_carry_square_Pipeline_1_fu_410_ap_start_reg                |   1|   0|    1|          0|
+    |grp_fiat_25519_carry_square_Pipeline_ARRAY_1_READ_fu_416_ap_start_reg     |   1|   0|    1|          0|
+    |grp_fiat_25519_carry_square_Pipeline_ARRAY_WRITE_fu_486_ap_start_reg      |   1|   0|    1|          0|
+    |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_34_3_fu_433_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_44_5_fu_446_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_54_7_fu_462_ap_start_reg  |   1|   0|    1|          0|
+    |lshr_ln113_4_reg_2143                                                     |  38|   0|   38|          0|
+    |mul157_reg_2002                                                           |  64|   0|   64|          0|
+    |mul211_reg_2007                                                           |  64|   0|   64|          0|
+    |mul244_reg_2023                                                           |  32|   0|   32|          0|
+    |mul2823339_reg_2042                                                       |  63|   0|   63|          0|
+    |mul3093237_reg_2047                                                       |  63|   0|   63|          0|
+    |mul316_reg_2029                                                           |  32|   0|   32|          0|
+    |reg_591                                                                   |  32|   0|   32|          0|
+    |reg_596                                                                   |  64|   0|   64|          0|
+    |reg_602                                                                   |  64|   0|   64|          0|
+    |reg_607                                                                   |  64|   0|   64|          0|
+    |reg_612                                                                   |  64|   0|   64|          0|
+    |tmp_reg_2197                                                              |   1|   0|    1|          0|
+    |trunc_ln105_1_reg_2132                                                    |  26|   0|   26|          0|
+    |trunc_ln105_reg_2127                                                      |  26|   0|   26|          0|
+    |trunc_ln113_11_reg_2167                                                   |  39|   0|   39|          0|
+    |trunc_ln113_6_reg_2148                                                    |  25|   0|   25|          0|
+    |trunc_ln17_1_reg_1831                                                     |  62|   0|   62|          0|
+    |trunc_ln1_reg_1837                                                        |  62|   0|   62|          0|
+    |trunc_ln78_1_reg_2057                                                     |  26|   0|   26|          0|
+    |trunc_ln83_1_reg_2067                                                     |  25|   0|   25|          0|
+    |trunc_ln88_1_reg_2077                                                     |  26|   0|   26|          0|
+    |trunc_ln88_reg_2072                                                       |  25|   0|   25|          0|
+    |trunc_ln89_reg_2082                                                       |  26|   0|   26|          0|
+    |trunc_ln93_1_reg_2102                                                     |  25|   0|   25|          0|
+    |trunc_ln93_reg_2097                                                       |  24|   0|   24|          0|
+    |zext_ln30_10_reg_1991                                                     |  32|   0|   63|         31|
+    |zext_ln30_2_reg_1955                                                      |  32|   0|   64|         32|
+    |zext_ln30_4_reg_1984                                                      |  32|   0|   64|         32|
+    |zext_ln30_5_reg_1949                                                      |  32|   0|   63|         31|
+    |zext_ln30_6_reg_1996                                                      |  32|   0|   64|         32|
+    |zext_ln30_9_reg_1961                                                      |  32|   0|   63|         31|
+    |zext_ln30_reg_1944                                                        |  32|   0|   64|         32|
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                     |2323|   0| 2576|        253|
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++-----------------------+-----+-----+------------+-------------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|                  control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|                  control|        scalar|
+|s_axi_control_AWADDR   |   in|    6|       s_axi|                  control|        scalar|
+|s_axi_control_WVALID   |   in|    1|       s_axi|                  control|        scalar|
+|s_axi_control_WREADY   |  out|    1|       s_axi|                  control|        scalar|
+|s_axi_control_WDATA    |   in|   32|       s_axi|                  control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|                  control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|                  control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|                  control|        scalar|
+|s_axi_control_ARADDR   |   in|    6|       s_axi|                  control|        scalar|
+|s_axi_control_RVALID   |  out|    1|       s_axi|                  control|        scalar|
+|s_axi_control_RREADY   |   in|    1|       s_axi|                  control|        scalar|
+|s_axi_control_RDATA    |  out|   32|       s_axi|                  control|        scalar|
+|s_axi_control_RRESP    |  out|    2|       s_axi|                  control|        scalar|
+|s_axi_control_BVALID   |  out|    1|       s_axi|                  control|        scalar|
+|s_axi_control_BREADY   |   in|    1|       s_axi|                  control|        scalar|
+|s_axi_control_BRESP    |  out|    2|       s_axi|                  control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  fiat_25519_carry_square|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|  fiat_25519_carry_square|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|  fiat_25519_carry_square|  return value|
+|m_axi_mem_AWVALID      |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWREADY      |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWADDR       |  out|   64|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWID         |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWLEN        |  out|    8|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWSIZE       |  out|    3|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWBURST      |  out|    2|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWLOCK       |  out|    2|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWCACHE      |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWPROT       |  out|    3|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWQOS        |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWREGION     |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_AWUSER       |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_WVALID       |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_WREADY       |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_WDATA        |  out|   32|       m_axi|                      mem|       pointer|
+|m_axi_mem_WSTRB        |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_WLAST        |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_WID          |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_WUSER        |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARVALID      |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARREADY      |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARADDR       |  out|   64|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARID         |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARLEN        |  out|    8|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARSIZE       |  out|    3|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARBURST      |  out|    2|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARLOCK       |  out|    2|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARCACHE      |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARPROT       |  out|    3|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARQOS        |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARREGION     |  out|    4|       m_axi|                      mem|       pointer|
+|m_axi_mem_ARUSER       |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_RVALID       |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_RREADY       |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_RDATA        |   in|   32|       m_axi|                      mem|       pointer|
+|m_axi_mem_RLAST        |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_RID          |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_RUSER        |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_RRESP        |   in|    2|       m_axi|                      mem|       pointer|
+|m_axi_mem_BVALID       |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_BREADY       |  out|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_BRESP        |   in|    2|       m_axi|                      mem|       pointer|
+|m_axi_mem_BID          |   in|    1|       m_axi|                      mem|       pointer|
+|m_axi_mem_BUSER        |   in|    1|       m_axi|                      mem|       pointer|
++-----------------------+-----+-----+------------+-------------------------+--------------+
+

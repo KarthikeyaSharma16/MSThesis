@@ -1,0 +1,357 @@
+set moduleName fiat_25519_carry_square_Pipeline_VITIS_LOOP_68_9
+set isTopModule 0
+set isCombinational 0
+set isDatapathOnly 0
+set isPipelined 1
+set pipeline_type none
+set FunctionProtocol ap_ctrl_hs
+set isOneStateSeq 0
+set ProfileFlag 0
+set StallSigGenFlag 0
+set isEnableWaveformDebug 1
+set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
+set C_modelName {fiat_25519_carry_square_Pipeline_VITIS_LOOP_68_9}
+set C_modelType { void 0 }
+set C_modelArgList {
+	{ add_ln40 int 64 regular  }
+	{ add_ln40_1 int 64 regular  }
+	{ add_ln40_3 int 64 regular  }
+	{ add_ln40_4 int 64 regular  }
+	{ add_ln40_2 int 64 regular  }
+	{ add_ln60_3 int 64 regular  }
+	{ mul211 int 64 regular  }
+	{ mul202 int 64 regular  }
+	{ mul254 int 64 regular  }
+	{ mul262 int 64 regular  }
+	{ mul2 int 64 regular  }
+	{ mul246 int 64 regular  }
+	{ mul5 int 64 regular  }
+	{ mul325 int 64 regular  }
+	{ mul4 int 64 regular  }
+	{ mul318 int 64 regular  }
+	{ mul344 int 64 regular  }
+	{ mul353 int 64 regular  }
+	{ mul360 int 64 regular  }
+	{ mul369 int 64 regular  }
+	{ mul3 int 64 regular  }
+	{ mul290 int 64 regular  }
+	{ mul299 int 64 regular  }
+	{ mul221 int 64 regular  }
+	{ mul237 int 64 regular  }
+	{ mul229 int 64 regular  }
+	{ add371_126_out int 64 regular {pointer 1}  }
+	{ add239_124_out int 64 regular {pointer 1}  }
+	{ add301_122_out int 64 regular {pointer 1}  }
+	{ add33720_out int 64 regular {pointer 1}  }
+	{ add27418_out int 64 regular {pointer 1}  }
+	{ p_out int 64 regular {pointer 1}  }
+	{ p_out1 int 64 regular {pointer 1}  }
+	{ p_out2 int 64 regular {pointer 1}  }
+	{ p_out3 int 64 regular {pointer 1}  }
+	{ p_out4 int 64 regular {pointer 1}  }
+	{ add20414_out int 64 regular {pointer 1}  }
+}
+set hasAXIMCache 0
+set C_modelArgMapList {[ 
+	{ "Name" : "add_ln40", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "add_ln40_1", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "add_ln40_3", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "add_ln40_4", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "add_ln40_2", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "add_ln60_3", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul211", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul202", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul254", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul262", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul2", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul246", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul5", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul325", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul4", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul318", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul344", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul353", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul360", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul369", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul3", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul290", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul299", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul221", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul237", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "mul229", "interface" : "wire", "bitwidth" : 64, "direction" : "READONLY"} , 
+ 	{ "Name" : "add371_126_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "add239_124_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "add301_122_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "add33720_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "add27418_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "p_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "p_out1", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "p_out2", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "p_out3", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "p_out4", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "add20414_out", "interface" : "wire", "bitwidth" : 64, "direction" : "WRITEONLY"} ]}
+# RTL Port declarations: 
+set portNum 54
+set portList { 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ ap_start sc_in sc_logic 1 start -1 } 
+	{ ap_done sc_out sc_logic 1 predone -1 } 
+	{ ap_idle sc_out sc_logic 1 done -1 } 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ add_ln40 sc_in sc_lv 64 signal 0 } 
+	{ add_ln40_1 sc_in sc_lv 64 signal 1 } 
+	{ add_ln40_3 sc_in sc_lv 64 signal 2 } 
+	{ add_ln40_4 sc_in sc_lv 64 signal 3 } 
+	{ add_ln40_2 sc_in sc_lv 64 signal 4 } 
+	{ add_ln60_3 sc_in sc_lv 64 signal 5 } 
+	{ mul211 sc_in sc_lv 64 signal 6 } 
+	{ mul202 sc_in sc_lv 64 signal 7 } 
+	{ mul254 sc_in sc_lv 64 signal 8 } 
+	{ mul262 sc_in sc_lv 64 signal 9 } 
+	{ mul2 sc_in sc_lv 64 signal 10 } 
+	{ mul246 sc_in sc_lv 64 signal 11 } 
+	{ mul5 sc_in sc_lv 64 signal 12 } 
+	{ mul325 sc_in sc_lv 64 signal 13 } 
+	{ mul4 sc_in sc_lv 64 signal 14 } 
+	{ mul318 sc_in sc_lv 64 signal 15 } 
+	{ mul344 sc_in sc_lv 64 signal 16 } 
+	{ mul353 sc_in sc_lv 64 signal 17 } 
+	{ mul360 sc_in sc_lv 64 signal 18 } 
+	{ mul369 sc_in sc_lv 64 signal 19 } 
+	{ mul3 sc_in sc_lv 64 signal 20 } 
+	{ mul290 sc_in sc_lv 64 signal 21 } 
+	{ mul299 sc_in sc_lv 64 signal 22 } 
+	{ mul221 sc_in sc_lv 64 signal 23 } 
+	{ mul237 sc_in sc_lv 64 signal 24 } 
+	{ mul229 sc_in sc_lv 64 signal 25 } 
+	{ add371_126_out sc_out sc_lv 64 signal 26 } 
+	{ add371_126_out_ap_vld sc_out sc_logic 1 outvld 26 } 
+	{ add239_124_out sc_out sc_lv 64 signal 27 } 
+	{ add239_124_out_ap_vld sc_out sc_logic 1 outvld 27 } 
+	{ add301_122_out sc_out sc_lv 64 signal 28 } 
+	{ add301_122_out_ap_vld sc_out sc_logic 1 outvld 28 } 
+	{ add33720_out sc_out sc_lv 64 signal 29 } 
+	{ add33720_out_ap_vld sc_out sc_logic 1 outvld 29 } 
+	{ add27418_out sc_out sc_lv 64 signal 30 } 
+	{ add27418_out_ap_vld sc_out sc_logic 1 outvld 30 } 
+	{ p_out sc_out sc_lv 64 signal 31 } 
+	{ p_out_ap_vld sc_out sc_logic 1 outvld 31 } 
+	{ p_out1 sc_out sc_lv 64 signal 32 } 
+	{ p_out1_ap_vld sc_out sc_logic 1 outvld 32 } 
+	{ p_out2 sc_out sc_lv 64 signal 33 } 
+	{ p_out2_ap_vld sc_out sc_logic 1 outvld 33 } 
+	{ p_out3 sc_out sc_lv 64 signal 34 } 
+	{ p_out3_ap_vld sc_out sc_logic 1 outvld 34 } 
+	{ p_out4 sc_out sc_lv 64 signal 35 } 
+	{ p_out4_ap_vld sc_out sc_logic 1 outvld 35 } 
+	{ add20414_out sc_out sc_lv 64 signal 36 } 
+	{ add20414_out_ap_vld sc_out sc_logic 1 outvld 36 } 
+}
+set NewPortList {[ 
+	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+ 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
+ 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
+ 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
+ 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "add_ln40", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add_ln40", "role": "default" }} , 
+ 	{ "name": "add_ln40_1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add_ln40_1", "role": "default" }} , 
+ 	{ "name": "add_ln40_3", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add_ln40_3", "role": "default" }} , 
+ 	{ "name": "add_ln40_4", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add_ln40_4", "role": "default" }} , 
+ 	{ "name": "add_ln40_2", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add_ln40_2", "role": "default" }} , 
+ 	{ "name": "add_ln60_3", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add_ln60_3", "role": "default" }} , 
+ 	{ "name": "mul211", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul211", "role": "default" }} , 
+ 	{ "name": "mul202", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul202", "role": "default" }} , 
+ 	{ "name": "mul254", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul254", "role": "default" }} , 
+ 	{ "name": "mul262", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul262", "role": "default" }} , 
+ 	{ "name": "mul2", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul2", "role": "default" }} , 
+ 	{ "name": "mul246", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul246", "role": "default" }} , 
+ 	{ "name": "mul5", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul5", "role": "default" }} , 
+ 	{ "name": "mul325", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul325", "role": "default" }} , 
+ 	{ "name": "mul4", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul4", "role": "default" }} , 
+ 	{ "name": "mul318", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul318", "role": "default" }} , 
+ 	{ "name": "mul344", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul344", "role": "default" }} , 
+ 	{ "name": "mul353", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul353", "role": "default" }} , 
+ 	{ "name": "mul360", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul360", "role": "default" }} , 
+ 	{ "name": "mul369", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul369", "role": "default" }} , 
+ 	{ "name": "mul3", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul3", "role": "default" }} , 
+ 	{ "name": "mul290", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul290", "role": "default" }} , 
+ 	{ "name": "mul299", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul299", "role": "default" }} , 
+ 	{ "name": "mul221", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul221", "role": "default" }} , 
+ 	{ "name": "mul237", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul237", "role": "default" }} , 
+ 	{ "name": "mul229", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "mul229", "role": "default" }} , 
+ 	{ "name": "add371_126_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add371_126_out", "role": "default" }} , 
+ 	{ "name": "add371_126_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "add371_126_out", "role": "ap_vld" }} , 
+ 	{ "name": "add239_124_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add239_124_out", "role": "default" }} , 
+ 	{ "name": "add239_124_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "add239_124_out", "role": "ap_vld" }} , 
+ 	{ "name": "add301_122_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add301_122_out", "role": "default" }} , 
+ 	{ "name": "add301_122_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "add301_122_out", "role": "ap_vld" }} , 
+ 	{ "name": "add33720_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add33720_out", "role": "default" }} , 
+ 	{ "name": "add33720_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "add33720_out", "role": "ap_vld" }} , 
+ 	{ "name": "add27418_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add27418_out", "role": "default" }} , 
+ 	{ "name": "add27418_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "add27418_out", "role": "ap_vld" }} , 
+ 	{ "name": "p_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "p_out", "role": "default" }} , 
+ 	{ "name": "p_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "p_out", "role": "ap_vld" }} , 
+ 	{ "name": "p_out1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "p_out1", "role": "default" }} , 
+ 	{ "name": "p_out1_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "p_out1", "role": "ap_vld" }} , 
+ 	{ "name": "p_out2", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "p_out2", "role": "default" }} , 
+ 	{ "name": "p_out2_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "p_out2", "role": "ap_vld" }} , 
+ 	{ "name": "p_out3", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "p_out3", "role": "default" }} , 
+ 	{ "name": "p_out3_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "p_out3", "role": "ap_vld" }} , 
+ 	{ "name": "p_out4", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "p_out4", "role": "default" }} , 
+ 	{ "name": "p_out4_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "p_out4", "role": "ap_vld" }} , 
+ 	{ "name": "add20414_out", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "add20414_out", "role": "default" }} , 
+ 	{ "name": "add20414_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "add20414_out", "role": "ap_vld" }}  ]}
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+		"CDFG" : "fiat_25519_carry_square_Pipeline_VITIS_LOOP_68_9",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "5",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "add_ln40", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln40_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln40_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln40_4", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln40_2", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln60_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul211", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul202", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul254", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul262", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul2", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul246", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul5", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul325", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul4", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul318", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul344", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul353", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul360", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul369", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul290", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul299", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul221", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul237", "Type" : "None", "Direction" : "I"},
+			{"Name" : "mul229", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add371_126_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "add239_124_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "add301_122_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "add33720_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "add27418_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "p_out", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "p_out1", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "p_out2", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "p_out3", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "p_out4", "Type" : "Vld", "Direction" : "O"},
+			{"Name" : "add20414_out", "Type" : "Vld", "Direction" : "O"}],
+		"Loop" : [
+			{"Name" : "VITIS_LOOP_68_9", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter1", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
+
+
+set ArgLastReadFirstWriteLatency {
+	fiat_25519_carry_square_Pipeline_VITIS_LOOP_68_9 {
+		add_ln40 {Type I LastRead 0 FirstWrite -1}
+		add_ln40_1 {Type I LastRead 0 FirstWrite -1}
+		add_ln40_3 {Type I LastRead 0 FirstWrite -1}
+		add_ln40_4 {Type I LastRead 0 FirstWrite -1}
+		add_ln40_2 {Type I LastRead 0 FirstWrite -1}
+		add_ln60_3 {Type I LastRead 0 FirstWrite -1}
+		mul211 {Type I LastRead 0 FirstWrite -1}
+		mul202 {Type I LastRead 0 FirstWrite -1}
+		mul254 {Type I LastRead 0 FirstWrite -1}
+		mul262 {Type I LastRead 0 FirstWrite -1}
+		mul2 {Type I LastRead 0 FirstWrite -1}
+		mul246 {Type I LastRead 0 FirstWrite -1}
+		mul5 {Type I LastRead 0 FirstWrite -1}
+		mul325 {Type I LastRead 0 FirstWrite -1}
+		mul4 {Type I LastRead 0 FirstWrite -1}
+		mul318 {Type I LastRead 0 FirstWrite -1}
+		mul344 {Type I LastRead 0 FirstWrite -1}
+		mul353 {Type I LastRead 0 FirstWrite -1}
+		mul360 {Type I LastRead 0 FirstWrite -1}
+		mul369 {Type I LastRead 0 FirstWrite -1}
+		mul3 {Type I LastRead 0 FirstWrite -1}
+		mul290 {Type I LastRead 0 FirstWrite -1}
+		mul299 {Type I LastRead 0 FirstWrite -1}
+		mul221 {Type I LastRead 0 FirstWrite -1}
+		mul237 {Type I LastRead 0 FirstWrite -1}
+		mul229 {Type I LastRead 0 FirstWrite -1}
+		add371_126_out {Type O LastRead -1 FirstWrite 1}
+		add239_124_out {Type O LastRead -1 FirstWrite 1}
+		add301_122_out {Type O LastRead -1 FirstWrite 1}
+		add33720_out {Type O LastRead -1 FirstWrite 1}
+		add27418_out {Type O LastRead -1 FirstWrite 1}
+		p_out {Type O LastRead -1 FirstWrite 1}
+		p_out1 {Type O LastRead -1 FirstWrite 1}
+		p_out2 {Type O LastRead -1 FirstWrite 1}
+		p_out3 {Type O LastRead -1 FirstWrite 1}
+		p_out4 {Type O LastRead -1 FirstWrite 1}
+		add20414_out {Type O LastRead -1 FirstWrite 1}}}
+
+set hasDtUnsupportedChannel 0
+
+set PerformanceInfo {[
+	{"Name" : "Latency", "Min" : "5", "Max" : "5"}
+	, {"Name" : "Interval", "Min" : "5", "Max" : "5"}
+]}
+
+set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
+]}
+
+set Spec2ImplPortList { 
+	add_ln40 { ap_none {  { add_ln40 in_data 0 64 } } }
+	add_ln40_1 { ap_none {  { add_ln40_1 in_data 0 64 } } }
+	add_ln40_3 { ap_none {  { add_ln40_3 in_data 0 64 } } }
+	add_ln40_4 { ap_none {  { add_ln40_4 in_data 0 64 } } }
+	add_ln40_2 { ap_none {  { add_ln40_2 in_data 0 64 } } }
+	add_ln60_3 { ap_none {  { add_ln60_3 in_data 0 64 } } }
+	mul211 { ap_none {  { mul211 in_data 0 64 } } }
+	mul202 { ap_none {  { mul202 in_data 0 64 } } }
+	mul254 { ap_none {  { mul254 in_data 0 64 } } }
+	mul262 { ap_none {  { mul262 in_data 0 64 } } }
+	mul2 { ap_none {  { mul2 in_data 0 64 } } }
+	mul246 { ap_none {  { mul246 in_data 0 64 } } }
+	mul5 { ap_none {  { mul5 in_data 0 64 } } }
+	mul325 { ap_none {  { mul325 in_data 0 64 } } }
+	mul4 { ap_none {  { mul4 in_data 0 64 } } }
+	mul318 { ap_none {  { mul318 in_data 0 64 } } }
+	mul344 { ap_none {  { mul344 in_data 0 64 } } }
+	mul353 { ap_none {  { mul353 in_data 0 64 } } }
+	mul360 { ap_none {  { mul360 in_data 0 64 } } }
+	mul369 { ap_none {  { mul369 in_data 0 64 } } }
+	mul3 { ap_none {  { mul3 in_data 0 64 } } }
+	mul290 { ap_none {  { mul290 in_data 0 64 } } }
+	mul299 { ap_none {  { mul299 in_data 0 64 } } }
+	mul221 { ap_none {  { mul221 in_data 0 64 } } }
+	mul237 { ap_none {  { mul237 in_data 0 64 } } }
+	mul229 { ap_none {  { mul229 in_data 0 64 } } }
+	add371_126_out { ap_vld {  { add371_126_out out_data 1 64 }  { add371_126_out_ap_vld out_vld 1 1 } } }
+	add239_124_out { ap_vld {  { add239_124_out out_data 1 64 }  { add239_124_out_ap_vld out_vld 1 1 } } }
+	add301_122_out { ap_vld {  { add301_122_out out_data 1 64 }  { add301_122_out_ap_vld out_vld 1 1 } } }
+	add33720_out { ap_vld {  { add33720_out out_data 1 64 }  { add33720_out_ap_vld out_vld 1 1 } } }
+	add27418_out { ap_vld {  { add27418_out out_data 1 64 }  { add27418_out_ap_vld out_vld 1 1 } } }
+	p_out { ap_vld {  { p_out out_data 1 64 }  { p_out_ap_vld out_vld 1 1 } } }
+	p_out1 { ap_vld {  { p_out1 out_data 1 64 }  { p_out1_ap_vld out_vld 1 1 } } }
+	p_out2 { ap_vld {  { p_out2 out_data 1 64 }  { p_out2_ap_vld out_vld 1 1 } } }
+	p_out3 { ap_vld {  { p_out3 out_data 1 64 }  { p_out3_ap_vld out_vld 1 1 } } }
+	p_out4 { ap_vld {  { p_out4 out_data 1 64 }  { p_out4_ap_vld out_vld 1 1 } } }
+	add20414_out { ap_vld {  { add20414_out out_data 1 64 }  { add20414_out_ap_vld out_vld 1 1 } } }
+}

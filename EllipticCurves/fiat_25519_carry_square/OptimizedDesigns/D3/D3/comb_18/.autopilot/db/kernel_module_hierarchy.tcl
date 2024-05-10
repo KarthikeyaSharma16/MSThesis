@@ -1,0 +1,19 @@
+set ModuleHierarchy {[{
+"Name" : "fiat_25519_carry_square","ID" : "0","Type" : "sequential",
+"SubInsts" : [
+	{"Name" : "grp_fiat_25519_carry_square_Pipeline_1_fu_522","ID" : "1","Type" : "sequential",
+		"SubLoops" : [
+		{"Name" : "Loop 1","ID" : "2","Type" : "pipeline"},]},
+	{"Name" : "grp_fiat_25519_carry_square_Pipeline_ARRAY_1_READ_fu_530","ID" : "3","Type" : "sequential",
+		"SubLoops" : [
+		{"Name" : "ARRAY_1_READ","ID" : "4","Type" : "pipeline"},]},
+	{"Name" : "grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_23_1_fu_539","ID" : "5","Type" : "sequential",
+		"SubLoops" : [
+		{"Name" : "VITIS_LOOP_23_1","ID" : "6","Type" : "pipeline"},]},
+	{"Name" : "grp_fiat_25519_carry_square_Pipeline_VITIS_LOOP_68_9_fu_551","ID" : "7","Type" : "sequential",
+		"SubLoops" : [
+		{"Name" : "VITIS_LOOP_68_9","ID" : "8","Type" : "pipeline"},]},
+	{"Name" : "grp_fiat_25519_carry_square_Pipeline_ARRAY_WRITE_fu_592","ID" : "9","Type" : "sequential",
+		"SubLoops" : [
+		{"Name" : "ARRAY_WRITE","ID" : "10","Type" : "pipeline"},]},]
+}]}
