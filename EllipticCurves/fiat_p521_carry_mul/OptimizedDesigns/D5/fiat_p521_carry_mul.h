@@ -1,5 +1,5 @@
-#ifndef __FIAT_P521_CARRY_MUL_LOOPED_H__
-#define __FIAT_P521_CARRY_MUL_LOOPED_H__
+#ifndef __FIAT_P521_CARRY_MUL_H__
+#define __FIAT_P521_CARRY_MUL_H__
 
 #include <stdint.h>
 #include <stdio.h>
@@ -23,5 +23,10 @@ typedef uint64_t fiat_p521_tight_field_element[9];
 #define fiat_p521_value_barrier_u64(x) (x)
 
 void test(uint64_t out1[9], uint64_t arg1[9], uint64_t arg2[9]);
+
+#define TILE_SIZE_I_1 1 // 1,2,4,8
+#define TILE_SIZE_J_1 1 // 1,2,4,8
+#define TILE_SIZE_I_2 1 // 1,2,4,8
+#define TILE_SIZE_J_2 1 // 1,2,4,8
 
 #endif
