@@ -22,5 +22,8 @@ typedef uint32_t fiat_p448_tight_field_element[16];
 
 void test(uint64_t out1[16], uint64_t arg1[16], uint64_t arg2[16]);
 
+#define TILE_SIZE_I_1 3 // 1,3,5,15
+#define TILE_SIZE_J_1 5 // 1,3,5,15
+
 
 #endif
