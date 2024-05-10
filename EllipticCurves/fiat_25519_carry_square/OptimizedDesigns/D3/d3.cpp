@@ -22,8 +22,10 @@ void fiat_25519_carry_square(uint32_t out1[10], uint32_t arg1[10])
     int i, c;
     for(i = 1; i < 9; i+=TILE_SIZE_I_1)
     {
+#pragma HLS PIPELINE II = 1
         for (int i1 = 0; i1 < TILE_SIZE_I_1; i1++)
         {
+#pragma HLS UNROLL
             c = ((i+i1)%2 == 0) ? 0x2 : 1;
             arr[i+i1] += ((uint64_t)(arg1_r[9-i-i1]) * (((arg1_r[9]) * UINT8_C(0x13)) * 0x2) * c);
         }
@@ -31,24 +33,30 @@ void fiat_25519_carry_square(uint32_t out1[10], uint32_t arg1[10])
 
     for(i = 3; i < 9; i+=TILE_SIZE_I_2)
     {
+#pragma HLS PIPELINE II = 1
         for (int i1 = 0; i1 < TILE_SIZE_I_2; i1++)
         {
+#pragma HLS UNROLL
             arr[i+i1] += ((arg1_r[10-i-i1]) * ((uint64_t)((arg1_r[8]) * UINT8_C(0x13)) * 0x2));
         }
     }
 
     for (int i = 0; i < 5; i+=TILE_SIZE_I_3)
     {
+#pragma HLS PIPELINE II = 1
         for (int i1 = 0; i1 < TILE_SIZE_I_3; i1++)
         {
+#pragma HLS UNROLL
             arr[9] += ((uint64_t)(arg1_r[i+i1]) * ((arg1_r[9-i-i1]) * 0x2));
         }
     }
 
     for (int i = 0; i < 4; i+=TILE_SIZE_I_4)
     {
+#pragma HLS PIPELINE II = 1
         for (int i1 = 0; i1 < TILE_SIZE_I_4; i1++)
         {
+#pragma HLS UNROLL
             arr[0] += ((uint64_t)(arg1_r[i+i1]) * (((arg1_r[8-i-i1])) * (0x2 * (0x1 + 0x1 * (i+i1 ==1 || i+i1 ==3)))));
             arr[1] += ((uint64_t)(arg1_r[i+i1]) * ((arg1_r[7-i-i1]) * 0x2));
             arr[2] += ((uint64_t)(arg1_r[i+i1]) * ((arg1_r[6-i-i1]) * 0x2) * (0x1 + 0x1 * (i+i1 == 1)));
@@ -59,8 +67,10 @@ void fiat_25519_carry_square(uint32_t out1[10], uint32_t arg1[10])
 
     for (int i = 0; i < 6; i+=TILE_SIZE_I_5)
     {
+#pragma HLS PIPELINE II = 1
         for (int i1 = 0; i1 < TILE_SIZE_I_5; i1++)
         {
+#pragma HLS UNROLL
             switch(i+i1)
             {
                 case 0:
