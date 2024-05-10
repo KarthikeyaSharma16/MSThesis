@@ -1,0 +1,2016 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: d2.cpp, Line: 63, Column: 19 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_63_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: d2.cpp, Line: 39, Column: 19 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_39_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: d2.cpp, Line: 44, Column: 20 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: d2.cpp, Line: 47, Column: 19 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_63_6
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:63:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_39_2
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:39:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:44:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:44:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:44:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:44:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:44:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PipelineRemovedByUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Pipeline directive for loop '''
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:44:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' has been removed because the loop is unrolled completely'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_47_4
+  - String:          ''' ('
+  - LoopLoc:         'd2.cpp:47:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          test
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          The program may have out of bound array access
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: d2.cpp, Line: 10, Column: 11 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          arr
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: d2.cpp, Line: 11, Column: 11 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          arg1_r
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: d2.cpp, Line: 12, Column: 11 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          arg2_r
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: d2.cpp, Line: 13, Column: 11 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          out1_w
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: d2.cpp, Line: 22, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        arg186seq
+  - ArrayName:       arg1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_1_READ
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:22:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 24, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.23
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: d2.cpp, Line: 29, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        arg287seq
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_2_READ
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:29:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 31, Column: 15 }
+  - OrigDirection:   read
+  - OrigID:          for.inc12.load.23
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       arg1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.576
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.307
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.35
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep88seq
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.54
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.318
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.587
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: d2.cpp, Line: 82, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        out189seq
+  - ArrayName:       out1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_WRITE
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:82:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: d2.cpp, Line: 84, Column: 11 }
+  - OrigDirection:   write
+  - OrigID:          for.inc389.store.6
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          scevgep88seq
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.82
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.95
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.122
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.135
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.162
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.175
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.202
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.215
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.242
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.255
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.275
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.293
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.332
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.368
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.381
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.408
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.421
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.448
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.461
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.488
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.501
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.528
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.541
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.561
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.646
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.659
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.686
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.699
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.726
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.739
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.766
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.779
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 52 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.806
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          for.body29.load.817
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       arg1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_36_1
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:36:20'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: d2.cpp, Line: 82, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i64
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 82, Column: 2 }
+  - OrigDirection:   write
+  - OrigID:          out189seq
+  - ArrayName:       out1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_WRITE
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:82:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i64
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       arg1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i64
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+  - OrigDirection:   read
+  - OrigID:          scevgep88seq
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: d2.cpp, Line: 29, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i64
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 29, Column: 2 }
+  - OrigDirection:   read
+  - OrigID:          arg287seq
+  - ArrayName:       arg2
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_2_READ
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:29:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: d2.cpp, Line: 22, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i64
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: d2.cpp, Line: 22, Column: 2 }
+  - OrigDirection:   read
+  - OrigID:          arg186seq
+  - ArrayName:       arg1
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_1_READ
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:22:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: d2.cpp, Line: 22, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_1_READ
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:22:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: d2.cpp, Line: 22, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        ARRAY_1_READ
+  - String:          '''('
+  - LoopLoc:         'd2.cpp:22:2'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: d2.cpp, Line: 29, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_2_READ
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:29:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: d2.cpp, Line: 29, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        ARRAY_2_READ
+  - String:          '''('
+  - LoopLoc:         'd2.cpp:29:2'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: d2.cpp, Line: 50, Column: 36 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: d2.cpp, Line: 52, Column: 54 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: d2.cpp, Line: 82, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq4
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        ARRAY_WRITE
+  - String:          ' '
+  - LoopLoc:         'd2.cpp:82:2'
+  - String:          ' '
+  - Function:        'test(unsigned long*, unsigned long*, unsigned long*)'
+    DebugLoc:        { File: d2.cpp, Line: 4, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: d2.cpp, Line: 82, Column: 2 }
+Function:        _Z4testPmS_S_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '9'
+  - String:          ' and bit width '
+  - Width:           '64'
+  - String:          ' in loop '''
+  - LoopName:        ARRAY_WRITE
+  - String:          '''('
+  - LoopLoc:         'd2.cpp:82:2'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

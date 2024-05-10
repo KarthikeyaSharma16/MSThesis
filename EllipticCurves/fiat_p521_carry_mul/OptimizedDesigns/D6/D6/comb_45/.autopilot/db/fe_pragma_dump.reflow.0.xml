@@ -1,0 +1,20 @@
+<pragmas>
+<pragma file="d6.cpp" line="69" pragmaType="pipeline" parentfunction="test" off="0" ii="1" rewind="0" style=""/>
+<pragma file="d6.cpp" line="72" pragmaType="unroll" parentfunction="test" factor="-1" skip_exit_check="0"/>
+<pragma file="d6.cpp" line="76" pragmaType="pipeline" parentfunction="test" off="0" ii="1" rewind="0" style=""/>
+<pragma file="d6.cpp" line="79" pragmaType="unroll" parentfunction="test" factor="-1" skip_exit_check="0"/>
+<pragma file="d6.cpp" line="58" pragmaType="pipeline" parentfunction="test" off="0" ii="1" rewind="0" style=""/>
+<pragma file="d6.cpp" line="61" pragmaType="unroll" parentfunction="test" factor="-1" skip_exit_check="0"/>
+<pragma file="d6.cpp" line="38" pragmaType="pipeline" parentfunction="test" off="0" ii="1" rewind="0" style=""/>
+<pragma file="d6.cpp" line="41" pragmaType="unroll" parentfunction="test" factor="-1" skip_exit_check="0"/>
+<pragma file="d6.cpp" line="45" pragmaType="pipeline" parentfunction="test" off="0" ii="1" rewind="0" style=""/>
+<pragma file="d6.cpp" line="48" pragmaType="unroll" parentfunction="test" factor="-1" skip_exit_check="0"/>
+<pragma file="d6.cpp" line="5" pragmaType="interface" parentfunction="test" mode="m_axi" port="out1" bundle="mem" offset="slave" name="" depth="9" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="d6.cpp" line="6" pragmaType="interface" parentfunction="test" mode="m_axi" port="arg1" bundle="mem" offset="slave" name="" depth="9" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="d6.cpp" line="7" pragmaType="interface" parentfunction="test" mode="m_axi" port="arg2" bundle="mem" offset="slave" name="" depth="9" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="d6.cpp" line="9" pragmaType="interface" parentfunction="test" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="d6.cpp" line="15" pragmaType="array_partition" parentfunction="test" dim="1" factor="0" mode="complete" dynamic="0" variable="out1_w"/>
+<pragma file="d6.cpp" line="16" pragmaType="array_partition" parentfunction="test" dim="1" factor="0" mode="complete" dynamic="0" variable="arg1_r"/>
+<pragma file="d6.cpp" line="17" pragmaType="array_partition" parentfunction="test" dim="1" factor="0" mode="complete" dynamic="0" variable="arg2_r"/>
+<pragma file="d6.cpp" line="18" pragmaType="array_partition" parentfunction="test" dim="1" factor="0" mode="complete" dynamic="0" variable="arr"/>
+</pragmas>

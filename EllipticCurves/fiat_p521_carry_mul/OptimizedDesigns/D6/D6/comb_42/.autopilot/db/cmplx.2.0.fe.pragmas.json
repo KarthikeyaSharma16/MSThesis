@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 66,
+    "calls": "",
+    "file": "d6.cpp",
+    "fileloc": 3,
+    "instructions": 1349,
+    "loads": {
+      "L": 224,
+      "T": 8
+    },
+    "name": "test",
+    "stores": {
+      "L": 63,
+      "T": 1
+    },
+    "total_instructions": 1349
+  }
+}

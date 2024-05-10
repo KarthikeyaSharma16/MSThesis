@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 382,
+    "calls": "",
+    "file": "d3.cpp",
+    "fileloc": 3,
+    "instructions": 2618,
+    "loads": {
+      "L": 350,
+      "T": 2
+    },
+    "name": "test",
+    "stores": {
+      "L": 87,
+      "T": 1
+    },
+    "total_instructions": 2618
+  }
+}

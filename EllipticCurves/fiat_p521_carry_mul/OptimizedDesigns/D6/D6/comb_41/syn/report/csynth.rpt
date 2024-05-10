@@ -1,0 +1,293 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test'
+================================================================
++ General Information: 
+    * Date:           Thu May  9 22:18:05 2024
+    * Version:        2023.1.1 (Build 3869133 on Jun 15 2023)
+    * Project:        D6
+    * Solution:       comb_41 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu9eg-ffvb1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+-----------+------------+------------+-----+
+    |              Modules             | Issue|      | Latency | Latency | Iteration|         | Trip |          |         |           |            |            |     |
+    |              & Loops             | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |    DSP    |     FF     |     LUT    | URAM|
+    +----------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+-----------+------------+------------+-----+
+    |+ test                            |     -|  0.00|       95|  950.000|         -|       96|     -|        no|  8 (~0%)|  624 (24%)|  10244 (1%)|  13366 (4%)|    -|
+    | + test_Pipeline_ARRAY_1_READ     |     -|  0.00|       11|  110.000|         -|       11|     -|        no|        -|          -|   587 (~0%)|    73 (~0%)|    -|
+    |  o ARRAY_1_READ                  |     -|  7.30|        9|   90.000|         2|        1|     9|       yes|        -|          -|           -|           -|    -|
+    | + test_Pipeline_ARRAY_2_READ     |     -|  0.00|       11|  110.000|         -|       11|     -|        no|        -|          -|   587 (~0%)|    73 (~0%)|    -|
+    |  o ARRAY_2_READ                  |     -|  7.30|        9|   90.000|         2|        1|     9|       yes|        -|          -|           -|           -|    -|
+    | + test_Pipeline_VITIS_LOOP_56_5  |     -|  0.00|       30|  300.000|         -|       30|     -|        no|        -|   16 (~0%)|  1414 (~0%)|  1253 (~0%)|    -|
+    |  o VITIS_LOOP_56_5               |    II|  7.30|       28|  280.000|        17|        6|     3|       yes|        -|          -|           -|           -|    -|
+    | + test_Pipeline_VITIS_LOOP_67_7  |     -|  0.41|       11|  110.000|         -|       11|     -|        no|        -|   128 (5%)|  2155 (~0%)|   3060 (1%)|    -|
+    |  o VITIS_LOOP_67_7               |     -|  7.30|        9|   90.000|         3|        1|     8|       yes|        -|          -|           -|           -|    -|
+    | + test_Pipeline_ARRAY_WRITE      |     -|  0.00|       11|  110.000|         -|       11|     -|        no|        -|          -|    66 (~0%)|   122 (~0%)|    -|
+    |  o ARRAY_WRITE                   |     -|  7.30|        9|   90.000|         2|        1|     9|       yes|        -|          -|           -|           -|    -|
+    +----------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+-----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|           | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_mem | 64 -> 64   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=8            |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | out1_1   | 0x10   | 32    | W      | Data signal of out1              |                                                                      |
+| s_axi_control | out1_2   | 0x14   | 32    | W      | Data signal of out1              |                                                                      |
+| s_axi_control | arg1_1   | 0x1c   | 32    | W      | Data signal of arg1              |                                                                      |
+| s_axi_control | arg1_2   | 0x20   | 32    | W      | Data signal of arg1              |                                                                      |
+| s_axi_control | arg2_1   | 0x28   | 32    | W      | Data signal of arg2              |                                                                      |
+| s_axi_control | arg2_2   | 0x2c   | 32    | W      | Data signal of arg2              |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------+
+| Argument | Direction | Datatype           |
++----------+-----------+--------------------+
+| out1     | inout     | long unsigned int* |
+| arg1     | inout     | long unsigned int* |
+| arg2     | inout     | long unsigned int* |
++----------+-----------+--------------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                          |
++----------+---------------+-----------+----------+----------------------------------+
+| out1     | m_axi_mem     | interface |          |                                  |
+| out1     | s_axi_control | register  | offset   | name=out1_1 offset=0x10 range=32 |
+| out1     | s_axi_control | register  | offset   | name=out1_2 offset=0x14 range=32 |
+| arg1     | m_axi_mem     | interface |          |                                  |
+| arg1     | s_axi_control | register  | offset   | name=arg1_1 offset=0x1c range=32 |
+| arg1     | s_axi_control | register  | offset   | name=arg1_2 offset=0x20 range=32 |
+| arg2     | m_axi_mem     | interface |          |                                  |
+| arg2     | s_axi_control | register  | offset   | name=arg2_1 offset=0x28 range=32 |
+| arg2     | s_axi_control | register  | offset   | name=arg2_2 offset=0x2c range=32 |
++----------+---------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+--------------+---------------+
+| HW Interface | Direction | Length | Width | Loop         | Loop Location |
++--------------+-----------+--------+-------+--------------+---------------+
+| m_axi_mem    | read      | 9      | 64    | ARRAY_1_READ | d6.cpp:22:2   |
+| m_axi_mem    | read      | 9      | 64    | ARRAY_2_READ | d6.cpp:29:2   |
+| m_axi_mem    | write     | 9      | 64    | ARRAY_WRITE  | d6.cpp:99:2   |
++--------------+-----------+--------+-------+--------------+---------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+-----------------+-----------+--------------+--------+-----------------+---------------+------------+-------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location | Direction | Burst Status | Length | Loop            | Loop Location | Resolution | Problem                                                                                               |
++--------------+----------+-----------------+-----------+--------------+--------+-----------------+---------------+------------+-------------------------------------------------------------------------------------------------------+
+| m_axi_mem    | arg1     | d6.cpp:24:15    | read      | Widen Fail   |        | ARRAY_1_READ    | d6.cpp:22:2   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_mem    | arg1     | d6.cpp:24:15    | read      | Inferred     | 9      | ARRAY_1_READ    | d6.cpp:22:2   |            |                                                                                                       |
+| m_axi_mem    | arg2     | d6.cpp:31:15    | read      | Widen Fail   |        | ARRAY_2_READ    | d6.cpp:29:2   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_mem    | arg2     | d6.cpp:31:15    | read      | Inferred     | 9      | ARRAY_2_READ    | d6.cpp:29:2   |            |                                                                                                       |
+| m_axi_mem    |          | d6.cpp:56:20    | read      | Fail         |        |                 |               | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region.                |
+| m_axi_mem    | arg2     | d6.cpp:62:52    | read      | Widen Fail   |        | VITIS_LOOP_56_5 | d6.cpp:56:20  | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_mem    | arg1     | d6.cpp:62:33    | read      | Widen Fail   |        |                 |               | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_mem    | arg1     | d6.cpp:62:33    | read      | Fail         |        | VITIS_LOOP_56_5 | d6.cpp:56:20  | 214-230    | Stride is incompatible                                                                                |
+| m_axi_mem    | arg2     | d6.cpp:62:52    | read      | Inferred     | 9      | VITIS_LOOP_56_5 | d6.cpp:56:20  |            |                                                                                                       |
+| m_axi_mem    | arg1     | d6.cpp:62:33    | read      | Inferred     | 3      | VITIS_LOOP_56_5 | d6.cpp:56:20  |            |                                                                                                       |
+| m_axi_mem    | out1     | d6.cpp:101:11   | write     | Widen Fail   |        | ARRAY_WRITE     | d6.cpp:99:2   | 214-353    | Could not widen since type i64 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_mem    | out1     | d6.cpp:101:11   | write     | Inferred     | 9      | ARRAY_WRITE     | d6.cpp:99:2   |            |                                                                                                       |
++--------------+----------+-----------------+-----------+--------------+--------+-----------------+---------------+------------+-------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                             | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++----------------------------------+-----+--------+-------------+-----+--------+---------+
+| + test                           | 624 |        |             |     |        |         |
+|   mul_64ns_64ns_128_1_1_U94      | 16  |        | mul_ln49    | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U94      | 16  |        | mul_ln49_1  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U95      | 16  |        | mul_ln49_2  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U96      | 16  |        | mul_ln49_3  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U97      | 16  |        | mul_ln49_4  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U98      | 16  |        | mul_ln49_5  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U95      | 16  |        | mul_ln49_6  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U99      | 16  |        | mul_ln49_7  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U100     | 16  |        | mul_ln49_8  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U101     | 16  |        | mul_ln49_9  | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U102     | 16  |        | mul_ln49_10 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U103     | 16  |        | mul_ln49_11 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U104     | 16  |        | mul_ln49_12 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U96      | 16  |        | mul_ln49_13 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U97      | 16  |        | mul_ln49_14 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U105     | 16  |        | mul_ln49_15 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U106     | 16  |        | mul_ln49_16 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U107     | 16  |        | mul_ln49_17 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U108     | 16  |        | mul_ln49_18 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U109     | 16  |        | mul_ln49_19 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U110     | 16  |        | mul_ln49_20 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U111     | 16  |        | mul_ln49_21 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U112     | 16  |        | mul_ln49_22 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U113     | 16  |        | mul_ln49_23 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U114     | 16  |        | mul_ln49_24 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U115     | 16  |        | mul_ln49_25 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U116     | 16  |        | mul_ln49_26 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U117     | 16  |        | mul_ln49_27 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U118     | 16  |        | arr         | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U119     | 16  |        | mul_ln49_29 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U120     | 16  |        | mul_ln49_30 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U98      | 16  |        | mul_ln49_31 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U99      | 16  |        | mul_ln49_32 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U121     | 16  |        | mul_ln49_33 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U122     | 16  |        | mul_ln49_34 | mul | auto   | 0       |
+|   mul_64ns_64ns_128_1_1_U123     | 16  |        | mul_ln49_35 | mul | auto   | 0       |
+|   arr_8_fu_730_p2                | -   |        | arr_8       | add | fabric | 0       |
+|   add_ln49_4_fu_748_p2           | -   |        | add_ln49_4  | add | fabric | 0       |
+|   add_ln49_10_fu_766_p2          | -   |        | add_ln49_10 | add | fabric | 0       |
+|   add_ln49_15_fu_784_p2          | -   |        | add_ln49_15 | add | fabric | 0       |
+|   add_ln49_18_fu_790_p2          | -   |        | add_ln49_18 | add | fabric | 0       |
+|   add_ln49_21_fu_796_p2          | -   |        | add_ln49_21 | add | fabric | 0       |
+|   add_ln49_22_fu_802_p2          | -   |        | add_ln49_22 | add | fabric | 0       |
+|   add_ln49_25_fu_808_p2          | -   |        | add_ln49_25 | add | fabric | 0       |
+|   add_ln87_fu_925_p2             | -   |        | add_ln87    | add | fabric | 0       |
+|   add_ln87_1_fu_945_p2           | -   |        | add_ln87_1  | add | fabric | 0       |
+|   add_ln87_2_fu_1026_p2          | -   |        | add_ln87_2  | add | fabric | 0       |
+|   add_ln87_3_fu_1046_p2          | -   |        | add_ln87_3  | add | fabric | 0       |
+|   add_ln87_4_fu_1066_p2          | -   |        | add_ln87_4  | add | fabric | 0       |
+|   add_ln87_5_fu_1086_p2          | -   |        | add_ln87_5  | add | fabric | 0       |
+|   add_ln87_6_fu_1200_p2          | -   |        | add_ln87_6  | add | fabric | 0       |
+|   add_ln87_7_fu_1220_p2          | -   |        | add_ln87_7  | add | fabric | 0       |
+|   out1_w_fu_1236_p2              | -   |        | out1_w      | add | fabric | 0       |
+|   add_ln88_fu_1259_p2            | -   |        | add_ln88    | add | fabric | 0       |
+|   add_ln88_1_fu_975_p2           | -   |        | add_ln88_1  | add | fabric | 0       |
+|   out1_w_1_fu_1283_p2            | -   |        | out1_w_1    | add | fabric | 0       |
+|   add_ln89_fu_1292_p2            | -   |        | add_ln89    | add | fabric | 0       |
+|   add_ln89_1_fu_995_p2           | -   |        | add_ln89_1  | add | fabric | 0       |
+|   out1_w_2_fu_1319_p2            | -   |        | out1_w_2    | add | fabric | 0       |
+|   out1_w_3_fu_1106_p2            | -   |        | out1_w_3    | add | fabric | 0       |
+|   out1_w_4_fu_1125_p2            | -   |        | out1_w_4    | add | fabric | 0       |
+|   out1_w_5_fu_1145_p2            | -   |        | out1_w_5    | add | fabric | 0       |
+|   out1_w_6_fu_1165_p2            | -   |        | out1_w_6    | add | fabric | 0       |
+|   out1_w_7_fu_1330_p2            | -   |        | out1_w_7    | add | fabric | 0       |
+|   out1_w_8_fu_1350_p2            | -   |        | out1_w_8    | add | fabric | 0       |
+|  + test_Pipeline_ARRAY_1_READ    | 0   |        |             |     |        |         |
+|    add_ln22_fu_218_p2            | -   |        | add_ln22    | add | fabric | 0       |
+|  + test_Pipeline_ARRAY_2_READ    | 0   |        |             |     |        |         |
+|    add_ln29_fu_218_p2            | -   |        | add_ln29    | add | fabric | 0       |
+|  + test_Pipeline_VITIS_LOOP_56_5 | 16  |        |             |     |        |         |
+|    add_ln56_1_fu_217_p2          | -   |        | add_ln56_1  | add | fabric | 0       |
+|    empty_fu_243_p2               | -   |        | empty       | sub | fabric | 0       |
+|    tmp1_fu_253_p2                | -   |        | tmp1        | add | fabric | 0       |
+|    empty_29_fu_263_p2            | -   |        | empty_29    | add | fabric | 0       |
+|    add_ln62_fu_297_p2            | -   |        | add_ln62    | add | fabric | 0       |
+|    add_ln62_1_fu_313_p2          | -   |        | add_ln62_1  | add | fabric | 0       |
+|    add_ln62_2_fu_335_p2          | -   |        | add_ln62_2  | add | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U23     | 16  |        | mul_ln62    | mul | auto   | 0       |
+|    mul_64ns_64ns_128_1_1_U23     | 16  |        | mul_ln62_1  | mul | auto   | 0       |
+|    mul_64ns_64ns_128_1_1_U23     | 16  |        | mul_ln62_2  | mul | auto   | 0       |
+|    add_ln62_7_fu_425_p2          | -   |        | add_ln62_7  | add | fabric | 0       |
+|    add_ln56_fu_340_p2            | -   |        | add_ln56    | add | fabric | 0       |
+|  + test_Pipeline_VITIS_LOOP_67_7 | 128 |        |             |     |        |         |
+|    mul_64ns_64ns_128_1_1_U29     | 16  |        | mul_ln80    | mul | auto   | 0       |
+|    add_ln80_fu_816_p2            | -   |        | add_ln80    | add | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U30     | 16  |        | mul_ln80_1  | mul | auto   | 0       |
+|    add_ln80_1_fu_833_p2          | -   |        | add_ln80_1  | add | fabric | 0       |
+|    add_ln77_fu_508_p2            | -   |        | add_ln77    | add | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U31     | 16  |        | mul_ln80_2  | mul | auto   | 0       |
+|    add_ln80_2_fu_851_p2          | -   |        | add_ln80_2  | add | fabric | 0       |
+|    sub_ln77_3_fu_524_p2          | -   |        | sub_ln77_3  | sub | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U32     | 16  |        | mul_ln80_3  | mul | auto   | 0       |
+|    add_ln80_3_fu_869_p2          | -   |        | add_ln80_3  | add | fabric | 0       |
+|    sub_ln77_4_fu_540_p2          | -   |        | sub_ln77_4  | sub | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U33     | 16  |        | mul_ln80_4  | mul | auto   | 0       |
+|    add_ln80_4_fu_887_p2          | -   |        | add_ln80_4  | add | fabric | 0       |
+|    sub_ln77_fu_566_p2            | -   |        | sub_ln77    | sub | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U34     | 16  |        | mul_ln80_5  | mul | auto   | 0       |
+|    add_ln80_5_fu_905_p2          | -   |        | add_ln80_5  | add | fabric | 0       |
+|    sub_ln77_1_fu_738_p2          | -   |        | sub_ln77_1  | sub | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U35     | 16  |        | mul_ln80_6  | mul | auto   | 0       |
+|    add_ln80_6_fu_923_p2          | -   |        | add_ln80_6  | add | fabric | 0       |
+|    tmp_8_fu_772_p10              | -   |        | sub_ln77_2  | sub | fabric | 0       |
+|    mul_64ns_64ns_128_1_1_U36     | 16  |        | mul_ln80_7  | mul | auto   | 0       |
+|    add_ln80_7_fu_941_p2          | -   |        | add_ln80_7  | add | fabric | 0       |
+|    add_ln67_fu_600_p2            | -   |        | add_ln67    | add | fabric | 0       |
+|  + test_Pipeline_ARRAY_WRITE     | 0   |        |             |     |        |         |
+|    add_ln99_fu_204_p2            | -   |        | add_ln99    | add | fabric | 0       |
++----------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-------------------------------------------------+---------------------------+
+| Type            | Options                                         | Location                  |
++-----------------+-------------------------------------------------+---------------------------+
+| interface       | m_axi depth=9 port=out1 offset=slave bundle=mem | d6.cpp:5 in test, out1    |
+| interface       | m_axi depth=9 port=arg1 offset=slave bundle=mem | d6.cpp:6 in test, arg1    |
+| interface       | m_axi depth=9 port=arg2 offset=slave bundle=mem | d6.cpp:7 in test, arg2    |
+| interface       | mode=s_axilite port=return                      | d6.cpp:9 in test, return  |
+| array_partition | variable=out1_w type=complete                   | d6.cpp:15 in test, out1_w |
+| array_partition | variable=arg1_r type=complete                   | d6.cpp:16 in test, arg1_r |
+| array_partition | variable=arg2_r type=complete                   | d6.cpp:17 in test, arg2_r |
+| array_partition | variable=arr type=complete                      | d6.cpp:18 in test, arr    |
+| pipeline        | II=1                                            | d6.cpp:38 in test         |
+| unroll          |                                                 | d6.cpp:41 in test         |
+| pipeline        | II=1                                            | d6.cpp:45 in test         |
+| unroll          |                                                 | d6.cpp:48 in test         |
+| pipeline        | II=1                                            | d6.cpp:58 in test         |
+| unroll          |                                                 | d6.cpp:61 in test         |
+| pipeline        | II=1                                            | d6.cpp:69 in test         |
+| unroll          |                                                 | d6.cpp:72 in test         |
+| pipeline        | II=1                                            | d6.cpp:76 in test         |
+| unroll          |                                                 | d6.cpp:79 in test         |
++-----------------+-------------------------------------------------+---------------------------+
+
+
