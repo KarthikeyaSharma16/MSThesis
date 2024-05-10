@@ -1,6 +1,6 @@
 #include "fiat_p448_carry_mul.h"
 
-void test(uint64_t out1[16], uint64_t arg1[16], uint64_t arg2[16])
+void test(uint32_t out1[16], uint32_t arg1[16], uint32_t arg2[16])
 {
 #pragma HLS interface m_axi depth=16 port=out1 offset=slave bundle=mem
 #pragma HLS interface m_axi depth=16 port=arg1 offset=slave bundle=mem

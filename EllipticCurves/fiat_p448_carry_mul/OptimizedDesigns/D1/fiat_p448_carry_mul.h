@@ -20,7 +20,7 @@ typedef uint32_t fiat_p448_tight_field_element[16];
 
 #define fiat_p448_value_barrier_u32(x) (x)
 
-void test(uint64_t out1[16], uint64_t arg1[16], uint64_t arg2[16]);
+void test(uint32_t out1[16], uint32_t arg1[16], uint32_t arg2[16]);
 
 #define TILE_SIZE_I_1 1 // 1,7
 #define TILE_SIZE_J_1 1 // 1,3,5,15
