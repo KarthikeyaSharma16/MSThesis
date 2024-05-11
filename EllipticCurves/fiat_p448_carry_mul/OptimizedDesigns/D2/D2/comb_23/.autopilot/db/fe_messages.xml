@@ -1,0 +1,114 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D2/run_script.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D2/run_script.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16 port=out1 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16 port=arg1 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16 port=arg2 offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=out1_w type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=arg1_r type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=arg2_r type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=arr type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="d2.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="test" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:76:19" msg_body="Loop 'VITIS_LOOP_76_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_76_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:80:30" msg_body="Loop 'VITIS_LOOP_80_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_80_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:83:19" msg_body="Loop 'VITIS_LOOP_83_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_83_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:45:19" msg_body="Loop 'VITIS_LOOP_45_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_45_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:53:26" msg_body="Loop 'VITIS_LOOP_53_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_53_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="d2.cpp:56:19" msg_body="Loop 'VITIS_LOOP_56_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_56_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_76_6' (d2.cpp:76:19) in function 'test' completely with a factor of 3">
+        <args Factor="3" LoopLoc="d2.cpp:76:19" LoopName="VITIS_LOOP_76_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_80_7' (d2.cpp:80:30) in function 'test' completely with a factor of 5">
+        <args Factor="5" LoopLoc="d2.cpp:80:30" LoopName="VITIS_LOOP_80_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="d2.cpp:4:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_80_7' (d2.cpp:80:30) in function 'test' has been removed because the loop is unrolled completely">
+        <args LoopLoc="d2.cpp:80:30" LoopName="VITIS_LOOP_80_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_83_8' (d2.cpp:83:19) in function 'test' completely with a factor of 3">
+        <args Factor="3" LoopLoc="d2.cpp:83:19" LoopName="VITIS_LOOP_83_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_45_2' (d2.cpp:45:19) in function 'test' completely with a factor of 15">
+        <args Factor="15" LoopLoc="d2.cpp:45:19" LoopName="VITIS_LOOP_45_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_53_3' (d2.cpp:53:26) in function 'test' completely with a factor of 1">
+        <args Factor="1" LoopLoc="d2.cpp:53:26" LoopName="VITIS_LOOP_53_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_PIPELINE" msg_id="214-189" msg_severity="WARNING" msg_loc="d2.cpp:4:0" msg_body="Pipeline directive for loop 'VITIS_LOOP_53_3' (d2.cpp:53:26) in function 'test' has been removed because the loop is unrolled completely">
+        <args LoopLoc="d2.cpp:53:26" LoopName="VITIS_LOOP_53_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="d2.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_56_4' (d2.cpp:56:19) in function 'test' completely with a factor of 15">
+        <args Factor="15" LoopLoc="d2.cpp:56:19" LoopName="VITIS_LOOP_56_4"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="d2.cpp:63:59" msg_body="The program may have out of bound array access"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="d2.cpp:59:27" msg_body="The program may have out of bound array access"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="d2.cpp:86:44" msg_body="The program may have out of bound array access"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:12:11" msg_body="Applying array_partition to 'arr': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="arr"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:13:11" msg_body="Applying array_partition to 'arg1_r': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="arg1_r"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:14:11" msg_body="Applying array_partition to 'arg2_r': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="arg2_r"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="d2.cpp:15:11" msg_body="Applying array_partition to 'out1_w': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="out1_w"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,68 @@
+{
+    "1": {
+        "name": "test_Pipeline_ARRAY_2_READ",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "101",
+        "total_instructions": "101",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "test",
+        "file": "d3.cpp",
+        "fileloc": "3",
+        "instructions": "1214",
+        "total_instructions": "1468",
+        "calls": "2 1 3",
+        "basicblocks": "1",
+        "loads": {
+            "L": "32"
+        }
+    },
+    "2": {
+        "name": "test_Pipeline_ARRAY_1_READ",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "101",
+        "total_instructions": "101",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "test_Pipeline_ARRAY_WRITE",
+        "file": "d3.cpp",
+        "fileloc": "0",
+        "instructions": "52",
+        "total_instructions": "52",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

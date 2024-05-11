@@ -1,0 +1,60 @@
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2043:3: warning: Added loop label VITIS_LOOP_37_1:   [xilinx-label-all-loops]
+  for(int i = 15; i>8; i-=1)
+  ^~~
+  VITIS_LOOP_37_1: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2043:3: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2046:2: warning: Added loop label VITIS_LOOP_40_2:   [xilinx-label-all-loops]
+ for (int i1 = 0; i1 < 1; i1++)
+ ^~~
+ VITIS_LOOP_40_2: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2046:2: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2050:9: warning: Added loop label VITIS_LOOP_44_3:   [xilinx-label-all-loops]
+        for(int j =15; j>0; j-=15)
+        ^~~
+        VITIS_LOOP_44_3: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2050:9: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2053:2: warning: Added loop label VITIS_LOOP_47_4:   [xilinx-label-all-loops]
+ for (int j1 = 0; j1 < 15; j1++)
+ ^~~
+ VITIS_LOOP_47_4: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2053:2: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2068:3: warning: Added loop label VITIS_LOOP_62_5:   [xilinx-label-all-loops]
+  for(int i = 15; i>0; i-=1)
+  ^~~
+  VITIS_LOOP_62_5: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2068:3: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2071:2: warning: Added loop label VITIS_LOOP_65_6:   [xilinx-label-all-loops]
+ for (int i1 = 0; i1 < 1; i1++)
+ ^~~
+ VITIS_LOOP_65_6: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2071:2: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2078:7: warning: Added loop label VITIS_LOOP_72_7:   [xilinx-label-all-loops]
+      for(int j =15; j>0; j-=1)
+      ^~~
+      VITIS_LOOP_72_7: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2078:7: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2081:2: warning: Added loop label VITIS_LOOP_75_8:   [xilinx-label-all-loops]
+ for (int j1 = 0; j1 < 1; j1++)
+ ^~~
+ VITIS_LOOP_75_8: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2081:2: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2094:3: warning: Added loop label VITIS_LOOP_88_9:   [xilinx-label-all-loops]
+  for(int i = 14; i>8; i-=7)
+  ^~~
+  VITIS_LOOP_88_9: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2094:3: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2097:2: warning: Added loop label VITIS_LOOP_91_10:   [xilinx-label-all-loops]
+ for (int i1 = 0; i1 < 7; i1++)
+ ^~~
+ VITIS_LOOP_91_10: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2097:2: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2101:9: warning: Added loop label VITIS_LOOP_95_11:   [xilinx-label-all-loops]
+        for(int j =15; j>0; j-=5)
+        ^~~
+        VITIS_LOOP_95_11: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2101:9: note: FIX-IT applied suggested code changes
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2104:2: warning: Added loop label VITIS_LOOP_98_12:   [xilinx-label-all-loops]
+ for (int j1 = 0; j1 < 5; j1++)
+ ^~~
+ VITIS_LOOP_98_12: 
+/export/hdd/scratch/km304/MSThesis/EllipticCurves/fiat_p448_carry_mul/OptimizedDesigns/D1/D1/comb_16/.autopilot/db/d1.pp.0.cpp:2104:2: note: FIX-IT applied suggested code changes

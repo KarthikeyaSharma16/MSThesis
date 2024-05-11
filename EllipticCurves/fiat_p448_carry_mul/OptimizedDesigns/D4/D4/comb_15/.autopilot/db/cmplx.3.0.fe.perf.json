@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 141,
+    "calls": "",
+    "file": "d4.cpp",
+    "fileloc": 3,
+    "instructions": 2511,
+    "loads": {
+      "L": 50
+    },
+    "name": "test",
+    "stores": {
+      "L": 60
+    },
+    "total_instructions": 2511
+  }
+}
