@@ -48,7 +48,7 @@ def modify_macros(header_file, comb):
 
 #main function that iterates through different combinations of TILE_SIZE_x_y created.
 def main():
-    header_file = 'fiat_p448_carry_mul_loops.h'
+    header_file = 'fiat_p448_carry_mul.h'
     tcl_file = 'run_script.tcl'
     macro_pattern = r'#define TILE_SIZE_(\w+)_(\d+)\s+\d+\s+\/\/\s+(\d+(?:,\d+)*)'
     with open(header_file, 'r') as file:
